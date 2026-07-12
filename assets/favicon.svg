@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="roundedSquare">
+      <rect width="100" height="100" rx="22" ry="22"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#roundedSquare)">
+    <rect width="100" height="100" fill="#EF2B2D"/>
+    <rect x="30" width="16" height="100" fill="#FFFFFF"/>
+    <rect y="42" width="100" height="16" fill="#FFFFFF"/>
+    <rect x="34" width="8" height="100" fill="#002868"/>
+    <rect y="46" width="100" height="8" fill="#002868"/>
+  </g>
+  <circle cx="50" cy="50" r="21" fill="#FFFFFF"/>
+  <path d="M43 36 L43 64 L69 50 Z" fill="#002868"/>
+</svg>

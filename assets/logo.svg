@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 72" role="img" aria-label="Beste IPTV Nordic">
+  <defs>
+    <clipPath id="badgeClip">
+      <rect width="64" height="64" rx="14" ry="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- Icon: Norwegian-flag cross + play triangle -->
+  <g transform="translate(4,4)">
+    <g clip-path="url(#badgeClip)">
+      <rect width="64" height="64" fill="#EF2B2D"/>
+      <rect x="19" width="10" height="64" fill="#FFFFFF"/>
+      <rect y="27" width="64" height="10" fill="#FFFFFF"/>
+      <rect x="21.5" width="5" height="64" fill="#002868"/>
+      <rect y="29.5" width="64" height="5" fill="#002868"/>
+    </g>
+    <circle cx="32" cy="32" r="13.5" fill="#FFFFFF"/>
+    <path d="M27.5 23.5 L27.5 40.5 L44 32 Z" fill="#002868"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="80" y="45" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="29" letter-spacing="-0.5">
+    <tspan fill="#F5F3EF">Beste IPTV </tspan><tspan fill="#FF9F0A">Nordic</tspan>
+  </text>
+</svg>
