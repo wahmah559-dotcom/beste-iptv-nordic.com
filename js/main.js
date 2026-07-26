@@ -1,4 +1,4 @@
-// Beste IPTV Nordic — shared front-end behavior
+// Beste IPTV Norge — shared front-end behavior
 
 document.addEventListener("DOMContentLoaded", function () {
   // Mobile nav toggle
@@ -46,5 +46,111 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 4200);
     nowTitle.style.transition = "opacity 0.3s ease";
     nowSub.style.transition = "opacity 0.3s ease";
+  }
+
+  // Cursor-tracking glow spotlight on the setup guide cards
+  var spotlightCards = document.querySelectorAll(".guide-card");
+  spotlightCards.forEach(function (card) {
+    card.addEventListener("pointermove", function (e) {
+      var rect = card.getBoundingClientRect();
+      var x = ((e.clientX - rect.left) / rect.width) * 100;
+      var y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty("--mx", x + "%");
+      card.style.setProperty("--my", y + "%");
+    });
+    card.addEventListener("pointerenter", function () {
+      card.classList.add("is-active");
+    });
+    card.addEventListener("pointerleave", function () {
+      card.classList.remove("is-active");
+    });
+  });
+
+  // Recommended IPTV apps carousel — arrows + "Slide X of Y", synced to manual scroll/swipe.
+  // Scrolls only the track's own scrollLeft via track.scrollTo() — deliberately never
+  // element.scrollIntoView(), which walks every scrollable ancestor (including the page
+  // itself) and previously caused the whole window to jump/snap.
+  var appsTrack = document.getElementById("appsTrack");
+  if (appsTrack) {
+    var appsSlides = Array.prototype.slice.call(appsTrack.querySelectorAll(".apps-slide"));
+    var appsPrevBtn = document.querySelector('.apps-arrow[data-dir="-1"]');
+    var appsNextBtn = document.querySelector('.apps-arrow[data-dir="1"]');
+    var appsCurrentEl = document.getElementById("appsSlideCurrent");
+    var appsTotalEl = document.getElementById("appsSlideTotal");
+    var appsActiveIndex = 0;
+
+    if (appsTotalEl) appsTotalEl.textContent = appsSlides.length;
+
+    function appsSetIndicator(i) {
+      appsActiveIndex = i;
+      if (appsCurrentEl) appsCurrentEl.textContent = i + 1;
+    }
+
+    function appsCenterSlide(i, behavior) {
+      var slide = appsSlides[i];
+      var left = slide.offsetLeft - (appsTrack.clientWidth - slide.clientWidth) / 2;
+      appsTrack.scrollTo({ left: left, behavior: behavior || "smooth" });
+    }
+
+    function appsGoTo(i) {
+      i = (i + appsSlides.length) % appsSlides.length;
+      appsCenterSlide(i);
+      appsSetIndicator(i);
+    }
+
+    if (appsPrevBtn) appsPrevBtn.addEventListener("click", function () { appsGoTo(appsActiveIndex - 1); });
+    if (appsNextBtn) appsNextBtn.addEventListener("click", function () { appsGoTo(appsActiveIndex + 1); });
+
+    function appsGetCenterMostIndex() {
+      var trackRect = appsTrack.getBoundingClientRect();
+      var trackCenter = trackRect.left + trackRect.width / 2;
+      var closestIdx = 0;
+      var closestDist = Infinity;
+      appsSlides.forEach(function (slide, idx) {
+        var r = slide.getBoundingClientRect();
+        var dist = Math.abs(r.left + r.width / 2 - trackCenter);
+        if (dist < closestDist) {
+          closestDist = dist;
+          closestIdx = idx;
+        }
+      });
+      return closestIdx;
+    }
+
+    var appsScrollTimer;
+    appsTrack.addEventListener("scroll", function () {
+      clearTimeout(appsScrollTimer);
+      appsScrollTimer = setTimeout(function () {
+        appsSetIndicator(appsGetCenterMostIndex());
+      }, 100);
+    });
+
+    // Advance the carousel every five seconds. Pause while the visitor is
+    // interacting with it or when the tab is not visible.
+    var appsAutoSlideTimer;
+    function appsStartAutoSlide() {
+      if (appsSlides.length < 2 || appsAutoSlideTimer) return;
+      appsAutoSlideTimer = setInterval(function () {
+        appsGoTo(appsActiveIndex + 1);
+      }, 5000);
+    }
+
+    function appsStopAutoSlide() {
+      clearInterval(appsAutoSlideTimer);
+      appsAutoSlideTimer = null;
+    }
+
+    appsTrack.addEventListener("pointerenter", appsStopAutoSlide);
+    appsTrack.addEventListener("pointerleave", appsStartAutoSlide);
+    appsTrack.addEventListener("focusin", appsStopAutoSlide);
+    appsTrack.addEventListener("focusout", appsStartAutoSlide);
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) appsStopAutoSlide();
+      else appsStartAutoSlide();
+    });
+
+    appsCenterSlide(0, "auto");
+    appsSetIndicator(0);
+    appsStartAutoSlide();
   }
 });
