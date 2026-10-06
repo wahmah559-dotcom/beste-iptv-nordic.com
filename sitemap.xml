@@ -142,4 +142,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/articles/iptv-pc-mac.html</loc>
+    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/iptv-pc-mac.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/iptv-pc-mac.html" />
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
