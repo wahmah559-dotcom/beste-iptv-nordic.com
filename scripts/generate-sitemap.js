@@ -1,63 +1,26 @@
 #!/usr/bin/env node
-// Regenerates sitemap.xml from the current set of pages and articles.
-// Run this after adding, removing, or renaming any page/article:
-//   node scripts/generate-sitemap.js
-
-const fs = require('fs');
-const path = require('path');
-
-const root = path.join(__dirname, '..');
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..');
 const domain = 'https://beste-iptv-nordic.com';
-const today = new Date().toISOString().slice(0, 10);
-
-const pages = [
-  { loc: '/', priority: '1.0', changefreq: 'weekly', lastmod: today },
-  { loc: '/pricing.html', priority: '0.9', changefreq: 'weekly', lastmod: today },
-  { loc: '/blog.html', priority: '0.7', changefreq: 'weekly', lastmod: today },
-  { loc: '/contact.html', priority: '0.7', changefreq: 'monthly', lastmod: today },
-];
-
-function extractPublishedDate(html) {
-  const match = html.match(/<meta property="article:published_time" content="([^"]+)">/);
-  return match ? match[1] : today;
+// Explicit content dates, preserved from the existing sitemap. Update only
+// after a substantive change; omit unknown dates rather than using build time.
+const dates = require('./sitemap-dates.json');
+const files = [...fs.readdirSync(root).filter(f => f.endsWith('.html')),
+  ...fs.readdirSync(path.join(root, 'articles')).filter(f => f.endsWith('.html')).map(f => 'articles/' + f)].sort();
+function generate() {
+  const entries = files.flatMap(file => {
+    const html = fs.readFileSync(path.join(root, file), 'utf8');
+    const loc = file === 'index.html' ? '/' : '/' + file;
+    const canonical = html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/i)?.[1];
+    if (canonical !== domain + loc || /<meta\b[^>]*(?:name|http-equiv)="(?:robots|googlebot|X-Robots-Tag)"[^>]*content="[^"]*\b(?:noindex|none)\b/i.test(html) || /http-equiv="refresh"/i.test(html)) return [];
+    const lastmod = html.match(/<meta\b[^>]*property="article:modified_time"[^>]*content="([^"]+)"/i)?.[1] || dates[loc];
+    if (lastmod && !/^\d{4}-\d{2}-\d{2}$/.test(lastmod)) throw new Error('Invalid date: ' + loc);
+    return ['  <url>\n    <loc>' + canonical + '</loc>' + (lastmod ? '\n    <lastmod>' + lastmod + '</lastmod>' : '') + '\n  </url>'];
+  });
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + entries.join('\n') + '\n</urlset>\n';
+  fs.writeFileSync(path.join(root, 'sitemap.xml'), xml);
+  console.log('Generated sitemap with ' + entries.length + ' canonical, indexable URLs.');
 }
-
-const articlesDir = path.join(root, 'articles');
-const articleFiles = fs.readdirSync(articlesDir).filter(f => f.endsWith('.html')).sort();
-
-const articles = articleFiles.map(file => {
-  const html = fs.readFileSync(path.join(articlesDir, file), 'utf8');
-  return {
-    loc: `/articles/${file}`,
-    priority: '0.6',
-    changefreq: 'monthly',
-    lastmod: extractPublishedDate(html),
-  };
-});
-
-const entries = [...pages, ...articles];
-
-function urlBlock({ loc, priority, changefreq, lastmod }) {
-  const full = `${domain}${loc}`;
-  return [
-    '  <url>',
-    `    <loc>${full}</loc>`,
-    `    <xhtml:link rel="alternate" hreflang="nb-NO" href="${full}" />`,
-    `    <xhtml:link rel="alternate" hreflang="x-default" href="${full}" />`,
-    `    <lastmod>${lastmod}</lastmod>`,
-    `    <changefreq>${changefreq}</changefreq>`,
-    `    <priority>${priority}</priority>`,
-    '  </url>',
-  ].join('\n');
-}
-
-const xml = [
-  '<?xml version="1.0" encoding="UTF-8"?>',
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
-  ...entries.map(urlBlock),
-  '</urlset>',
-  '',
-].join('\n');
-
-fs.writeFileSync(path.join(root, 'sitemap.xml'), xml, 'utf8');
-console.log(`sitemap.xml regenerated with ${entries.length} URLs (${pages.length} pages, ${articles.length} articles).`);
+if (require.main === module) generate();
+module.exports = generate;

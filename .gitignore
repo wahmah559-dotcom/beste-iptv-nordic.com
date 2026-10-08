@@ -1,0 +1,5 @@
+# Local snapshots, original backups and browser verification dependencies
+.local-preview/
+
+# Generated static production artifact
+dist/

@@ -1,153 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://beste-iptv-nordic.com/</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/" />
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/pricing.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/pricing.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/pricing.html" />
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/blog.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/blog.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/blog.html" />
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/contact.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/contact.html" />
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://beste-iptv-nordic.com/articles/4k-uhd-uten-buffering.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/4k-uhd-uten-buffering.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/4k-uhd-uten-buffering.html" />
     <lastmod>2026-07-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://beste-iptv-nordic.com/articles/apple-tv-ios-installation.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/apple-tv-ios-installation.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/apple-tv-ios-installation.html" />
     <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://beste-iptv-nordic.com/articles/basta-android-tv-box-iptv.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/basta-android-tv-box-iptv.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/basta-android-tv-box-iptv.html" />
     <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://beste-iptv-nordic.com/articles/beste-iptv-apper-norge.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/beste-iptv-apper-norge.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/beste-iptv-apper-norge.html" />
     <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://beste-iptv-nordic.com/articles/eliteserien-live-4k.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/eliteserien-live-4k.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/eliteserien-live-4k.html" />
     <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://beste-iptv-nordic.com/articles/er-iptv-lovlig-i-norge.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/er-iptv-lovlig-i-norge.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/er-iptv-lovlig-i-norge.html" />
     <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://beste-iptv-nordic.com/articles/fire-tv-stick-installation.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/fire-tv-stick-installation.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/fire-tv-stick-installation.html" />
     <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/articles/kom-i-gang-15-minutter.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/kom-i-gang-15-minutter.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/kom-i-gang-15-minutter.html" />
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/articles/mag-formuler-installation.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/mag-formuler-installation.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/mag-formuler-installation.html" />
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/articles/norske-tv-kanaler-samlet.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/norske-tv-kanaler-samlet.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/norske-tv-kanaler-samlet.html" />
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/articles/nye-kanaler-vod-juni.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/nye-kanaler-vod-juni.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/nye-kanaler-vod-juni.html" />
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/articles/smart-tv-vs-android-box.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/smart-tv-vs-android-box.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/smart-tv-vs-android-box.html" />
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/articles/iptv-test-24-timer-gratis.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/iptv-test-24-timer-gratis.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/iptv-test-24-timer-gratis.html" />
-    <lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://beste-iptv-nordic.com/articles/iptv-samsung-lg-smart-tv.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/iptv-samsung-lg-smart-tv.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/iptv-samsung-lg-smart-tv.html" />
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://beste-iptv-nordic.com/articles/iptv-pc-mac.html</loc>
-    <xhtml:link rel="alternate" hreflang="nb-NO" href="https://beste-iptv-nordic.com/articles/iptv-pc-mac.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://beste-iptv-nordic.com/articles/iptv-pc-mac.html" />
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/articles/iptv-samsung-lg-smart-tv.html</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/articles/iptv-test-24-timer-gratis.html</loc>
+    <lastmod>2026-10-01</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/articles/kom-i-gang-15-minutter.html</loc>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/articles/mag-formuler-installation.html</loc>
+    <lastmod>2026-07-10</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/articles/norske-tv-kanaler-samlet.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/articles/nye-kanaler-vod-juni.html</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/articles/smart-tv-vs-android-box.html</loc>
+    <lastmod>2026-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/blog.html</loc>
+    <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/contact.html</loc>
+    <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://beste-iptv-nordic.com/pricing.html</loc>
+    <lastmod>2026-07-22</lastmod>
   </url>
 </urlset>

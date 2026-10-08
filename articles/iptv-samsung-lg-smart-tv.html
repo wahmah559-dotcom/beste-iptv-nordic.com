@@ -20,6 +20,7 @@
 <meta property="og:url" content="https://beste-iptv-nordic.com/articles/iptv-samsung-lg-smart-tv.html">
 <meta property="og:image" content="https://beste-iptv-nordic.com/assets/articles/iptv-samsung-lg-smart-tv.webp">
 <meta property="article:published_time" content="2026-10-06">
+<meta property="article:modified_time" content="2026-10-08">
 <meta property="article:author" content="Beste IPTV Norge">
 <meta property="article:section" content="Installasjonsguide">
 <link rel="stylesheet" href="../css/style.css">
@@ -43,7 +44,7 @@
       "headline": "IPTV på Samsung og LG Smart-TV – slik setter du det opp",
       "description": "Slik setter du opp IPTV på Samsung og LG Smart-TV. Følg trinnene for appinstallasjon og innlogging, og få hjelp med spillelister, bufring og oppdateringer.",
       "datePublished": "2026-10-06",
-      "dateModified": "2026-10-06",
+      "dateModified": "2026-10-08",
       "inLanguage": "nb-NO",
       "author": {
         "@type": "Organization",
@@ -109,7 +110,7 @@
       <p class="breadcrumbs"><a href="../index.html">Hjem</a><span>/</span><a href="../blog.html">Blogg</a><span>/</span>Oppsett på Samsung og LG Smart-TV</p>
       <span class="section-eyebrow">Installasjonsguide</span>
       <h1>Slik setter du opp IPTV på Samsung og LG Smart-TV</h1>
-      <div class="article-meta"><span>Oppdatert 6. oktober 2026</span><span>Beste IPTV Norge Redaksjon</span></div>
+      <div class="article-meta"><span>Oppdatert 8. oktober 2026</span><span>Beste IPTV Norge Redaksjon</span></div>
       <div class="article-cover">
         <img src="../assets/articles/iptv-samsung-lg-smart-tv.webp" srcset="../assets/articles/iptv-samsung-lg-smart-tv-640.webp 640w, ../assets/articles/iptv-samsung-lg-smart-tv.webp 1280w" sizes="(max-width: 808px) calc(100vw - 48px), 760px" alt="Smart-TV med fjernkontroll, ruter og Ethernet-kabel i en skandinavisk stue" width="1280" height="720" loading="eager" fetchpriority="high" decoding="async">
       </div>
@@ -174,6 +175,17 @@
     <p>Hvis appen støtter M3U og du har fått en M3U-lenke, legg inn hele lenken i feltet for spilleliste. Unngå ekstra mellomrom og linjeskift. Lagre oppsettet og bruk appens funksjon for å laste inn eller oppdatere listen. En M3U-lenke kan inneholde tilgangsopplysninger og bør ikke deles offentlig.</p>
     <h3>Portalinnlogging</h3>
     <p>Portalinnlogging skal bare brukes når støtte er bekreftet for både appen, TV-en og tjenesten. Ikke legg en portaladresse i et M3U-felt, og ikke overfør et portaloppsett for MAG eller Formuler til TV-en uten bekreftelse. Hvis du bare har fått en portaladresse, men appen ber om andre opplysninger, be om riktig oppsett før du går videre.</p>
+
+    <h3>Eksempel: last inn en spilleliste i Smart IPTV</h3>
+    <p>Dette gjelder appen <strong>Smart IPTV</strong>, ikke alle apper med IPTV i navnet. Utvikleren beskriver appbutikkinstallasjon for <a href="https://siptv.app/howto/sammy/">Samsung Tizen fra 2019</a> og <a href="https://siptv.app/howto/lg/">LG via LG Apps Store i ditt land</a>. Kontroller tilgjengeligheten på din TV først; dette er ingen garanti for alle modeller eller regioner.</p>
+    <ol>
+      <li>Installer appen fra TV-ens offisielle appbutikk når den er tilgjengelig, og åpne den minst én gang.</li>
+      <li>Finn MAC-adressen eller ID-en som vises i selve appen. Bruk denne opplysningen, ikke en tilfeldig nettverksadresse fra ruterens oversikt.</li>
+      <li>Åpne utviklerens <a href="https://siptv.app/mylist/">My List-side</a> på datamaskinen. Fyll inn appens MAC/ID og legg inn hele spillelisteadressen i URL-feltet, eller velg en lokal spillelistefil. Følg sidens opplastingsvalg.</li>
+      <li>Last inn spillelisten på nytt i TV-appen. På LG beskriver utvikleren tasten <strong>0</strong> som «Reload playlist» utenfor avspillingsmodus; under avspilling har tasten en annen funksjon.</li>
+      <li>Kontroller bilde og lyd. På LG webOS oppgir utvikleren at blant annet UDP-, RTP-, RTMP- og RTSP-strømmer ikke fungerer direkte i appen. Be tilbyderen avklare strømformatet hvis listen vises, men innholdet ikke starter.</li>
+    </ol>
+    <p>Appaktivering og tilgang til innhold er separate ting. På My List-siden anbefaler utvikleren «Save online» bare ved problemer med å laste inn listen på grunn av lite TV-minne. Bruk også appens lås for MAC/ID for å hindre at andre endrer spillelisten.</p>
 
     <h2 id="test-oppsettet">Kontroller at oppsettet fungerer</h2>
     <p>Når listen er lastet inn, prøv innhold som faktisk er tilgjengelig med tilgangen din. Kontroller at bilde og lyd starter, at fjernkontrollen fungerer i appen, og at du finner tilbake til innholdet. Lukk deretter appen og åpne den igjen for å sjekke at oppsettet er lagret.</p>

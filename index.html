@@ -30,6 +30,7 @@
 <meta name="twitter:description" content="55 000+ TV-kanaler & VOD i Norge. Få hjelp med oppsett via WhatsApp.">
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/nordic-refresh.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -127,13 +128,14 @@
 }
 </script>
 </head>
-<body>
+<body class="nordic-refresh page-home">
+<a class="skip-link" href="#main-content">Hopp til innhold</a>
 
 <header class="nav">
   <div class="wrap">
     <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Beste IPTV Norge" width="343" height="65"></a>
-    <nav class="nav-links" aria-label="Hovedmeny">
-      <a href="index.html" class="active">Hjem</a>
+    <nav id="main-menu" class="nav-links" aria-label="Hovedmeny">
+      <a href="index.html" class="active" aria-current="page">Hjem</a>
       <a href="index.html#kanaler">Kanaler</a>
       <a href="pricing.html">Priser</a>
       <a href="blog.html">Blogg</a>
@@ -141,25 +143,25 @@
     </nav>
     <div class="nav-right">
       <a href="pricing.html" class="nav-cta">Kom i gang</a>
-      <button type="button" class="nav-toggle" aria-label="Åpne meny" aria-expanded="false">
+      <button type="button" class="nav-toggle" aria-label="Åpne meny" aria-expanded="false" aria-controls="main-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main-content">
 
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-heading">
     <div class="wrap hero-inner">
       <div>
-        <span class="eyebrow">Norges IPTV-tjeneste #1</span>
+        <span class="eyebrow">TV, sport og underholdning i Norge</span>
         <h1 id="hero-heading">Norges beste IPTV-abonnement<br><span class="accent">55 000+ TV-kanaler & VOD</span></h1>
-        <p class="hero-sub">Beste IPTV Norge samler direktesendt TV, direktesport og et enormt VOD-bibliotek på ett sted — med full støtte for NRK, TV2 og Viaplay. Skarp 4K/FHD-kvalitet, null bufring og ingen bindingstid, uansett hvor i Norge du bor.</p>
+        <p class="hero-sub">Beste IPTV Norge samler direktesendt TV, sport, filmer og serier på ett sted. Utforsk tjenesten, be om en 24-timers prøveperiode eller sammenlign pakkene. Vi hjelper deg med oppsett via WhatsApp.</p>
         <div class="hero-actions">
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20teste%20IPTV%20gratis%20i%2024%20timer." class="btn-free-test" target="_blank" rel="noopener">Be om gratis test i 24 timer</a>
           <a href="pricing.html" class="btn-primary">Se priser og pakker</a>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20teste%20IPTV%20gratis%20i%2024%20timer." class="btn-free-test" target="_blank" rel="noopener">🎁 Få 24t Gratis Test</a>
           <a href="#kanaler" class="btn-secondary">Utforsk kanalene →</a>
         </div>
         <p class="hero-trust">
@@ -168,6 +170,16 @@
           <span class="pill">✓ Hjelp på WhatsApp</span>
         </p>
       </div>
+      <aside class="hero-panel" aria-label="Kom i gang">
+        <span class="section-eyebrow">En enkel start</span>
+        <h2>Fra første test til din TV-kveld.</h2>
+        <ol>
+          <li><span>01</span><div><strong>Utforsk tjenesten</strong><p>Se kanaler og avklar enheten din.</p></div></li>
+          <li><span>02</span><div><strong>Test eller sammenlign</strong><p>Be om en prøveperiode eller velg pakke.</p></div></li>
+          <li><span>03</span><div><strong>Ta kontakt</strong><p>Få hjelp med oppsett via WhatsApp.</p></div></li>
+        </ol>
+        <a href="pricing.html">Sammenlign alle pakker →</a>
+      </aside>
     </div>
 
    <!-- STREAMING SHOWCASE -->
@@ -362,7 +374,7 @@
         </div>
         <div class="poster-card poster-12">
           <div class="poster-art"></div>
-          <img class="poster-img" src="https://image.tmdb.org/t/p/w500/7Ns6tO3aYjppI5bgrwYgwLJ2g1.jpg" alt="Plakat for The Boys" loading="lazy" width="400" height="600">
+          <img class="poster-img" src="https://tse2.mm.bing.net/th/id/OIP.BKJ82lpSeJY86orUONkydwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Plakat for The Boys" loading="lazy" width="400" height="600">
           <div class="poster-shade"></div>
           <div class="poster-play"></div>
           <span class="poster-quality series">SERIE</span>
@@ -437,60 +449,6 @@
   </section>
 
   <!-- NORWAY COVERAGE -->
-  <section class="section" id="dekning">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="section-eyebrow">Dekning i hele Norge</span>
-        <h2>Fra Oslo til Tromsø — samme stabile kvalitet</h2>
-        <p class="section-sub">Uansett hvor i landet du bor, finner du dine lokale favorittkanaler rett ved siden av internasjonal sport og film.</p>
-      </div>
-
-      <div class="country-grid">
-        <div class="country-card">
-          <div class="flag">🇳🇴</div>
-          <h3>Oslo & Østlandet</h3>
-          <div class="country-channels">
-            <span class="channel-chip">NRK1</span>
-            <span class="channel-chip">TV2</span>
-            <span class="channel-chip">Viaplay</span>
-            <span class="channel-chip">TVNorge</span>
-          </div>
-        </div>
-        <div class="country-card">
-          <div class="flag">🇳🇴</div>
-          <h3>Bergen & Vestlandet</h3>
-          <div class="country-channels">
-            <span class="channel-chip">NRK1</span>
-            <span class="channel-chip">TV2</span>
-            <span class="channel-chip">Viaplay</span>
-            <span class="channel-chip">Eurosport</span>
-          </div>
-        </div>
-        <div class="country-card">
-          <div class="flag">🇳🇴</div>
-          <h3>Trondheim & Midt-Norge</h3>
-          <div class="country-channels">
-            <span class="channel-chip">NRK1</span>
-            <span class="channel-chip">TV2</span>
-            <span class="channel-chip">Viaplay</span>
-            <span class="channel-chip">TV3</span>
-          </div>
-        </div>
-        <div class="country-card">
-          <div class="flag">🇳🇴</div>
-          <h3>Tromsø & Nord-Norge</h3>
-          <div class="country-channels">
-            <span class="channel-chip">NRK1</span>
-            <span class="channel-chip">TV2</span>
-            <span class="channel-chip">Viaplay</span>
-            <span class="channel-chip">Eurosport</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING TEASER -->
   <section class="section" id="priser">
     <div class="wrap">
       <div class="section-head">
@@ -511,20 +469,22 @@
         <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20teste%20IPTV%20gratis%20i%2024%20timer." class="trial-banner-btn" target="_blank" rel="noopener">Prøv gratis i 24 timer →</a>
       </div>
 
+      <p class="pricing-caption">Alle priser er oppgitt i norske kroner (NOK) og gjelder hele perioden.</p>
       <div class="pricing-grid">
         <!-- 1 Måned -->
         <div class="plan-card">
-          <div class="plan-name">1 Måned</div>
+          <h3 class="plan-name">1 måned</h3>
           <p class="plan-desc">Test hele kanalpakken — inkludert NRK, TV2 og Viaplay — risikofritt.</p>
-          <div class="plan-price"><span class="amount">149</span><span class="period">kr totalt</span></div>
-          <p class="plan-note">Engangsbetaling · 1 enhet</p>
+          <div class="plan-price"><span class="amount">149</span><span class="period">NOK totalt</span></div>
+          <p class="plan-note"><strong>1 enhet</strong> · Engangsbetaling</p>
+          <p class="plan-comparison">149 NOK per måned i gjennomsnitt</p>
           <ul class="plan-features">
             <li><span class="check">✓</span> 55 000+ TV-kanaler & VOD</li>
             <li><span class="check">✓</span> Strømming i FHD</li>
             <li><span class="check">✓</span> Avklar kompatibiliteten for enheten din</li>
             <li><span class="check">✓</span> Vanlig kundestøtte</li>
           </ul>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%201%20Måned-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Kjøp nå</a>
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%201%20Måned-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Velg 1 måned</a>
           <div class="plan-microcopy">
             <span>Hjelp med aktivering via WhatsApp</span>
             <span>🔒 Ingen bindingstid</span>
@@ -533,17 +493,18 @@
 
         <!-- 3 Måneder -->
         <div class="plan-card">
-          <div class="plan-name">3 Måneder</div>
+          <h3 class="plan-name">3 måneder</h3>
           <p class="plan-desc">For deg som vil prøve tjenesten en hel sesong til lav pris.</p>
-          <div class="plan-price"><span class="amount">299</span><span class="period">kr totalt</span></div>
-          <p class="plan-note"><span class="plan-old-price">447 kr</span><span class="plan-save">Spar 33%</span> · ca. 100 kr / mnd · 1 enhet</p>
+          <div class="plan-price"><span class="amount">299</span><span class="period">NOK totalt</span></div>
+          <p class="plan-note"><strong>1 enhet</strong> · Engangsbetaling</p>
+          <p class="plan-comparison">99,67 NOK per måned i gjennomsnitt</p>
           <ul class="plan-features">
             <li><span class="check">✓</span> 55 000+ TV-kanaler & VOD</li>
             <li><span class="check">✓</span> Strømming i 4K/FHD</li>
             <li><span class="check">✓</span> Avklar kompatibiliteten for enheten din</li>
             <li><span class="check">✓</span> Vanlig kundestøtte</li>
           </ul>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%203%20Måneder-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Kjøp nå</a>
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%203%20Måneder-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Velg 3 måneder</a>
           <div class="plan-microcopy">
             <span>Hjelp med aktivering via WhatsApp</span>
             <span>🔒 Ingen bindingstid</span>
@@ -552,18 +513,19 @@
 
         <!-- 6 Måneder -->
         <div class="plan-card">
-          <span class="plan-badge">Mest populær</span>
-          <div class="plan-name">6 Måneder</div>
+          <span class="plan-badge">6 måneder</span>
+          <h3 class="plan-name">6 måneder</h3>
           <p class="plan-desc">Best verdi for faste seere som vil ha full tilgang over tid.</p>
-          <div class="plan-price"><span class="amount">449</span><span class="period">kr totalt</span></div>
-          <p class="plan-note"><span class="plan-old-price">894 kr</span><span class="plan-save">Spar 50%</span> · ca. 75 kr / mnd · 2 enheter</p>
+          <div class="plan-price"><span class="amount">449</span><span class="period">NOK totalt</span></div>
+          <p class="plan-note"><strong>2 enheter</strong> · Engangsbetaling</p>
+          <p class="plan-comparison">74,83 NOK per måned i gjennomsnitt</p>
           <ul class="plan-features">
             <li><span class="check">✓</span> 55 000+ TV-kanaler & VOD</li>
             <li><span class="check">✓</span> Strømming i 4K UHD</li>
             <li><span class="check">✓</span> Avklar kompatibiliteten for enheten din</li>
             <li><span class="check">✓</span> Prioritert kundestøtte</li>
           </ul>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%206%20Måneder-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Kjøp nå</a>
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%206%20Måneder-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Velg 6 måneder</a>
           <div class="plan-microcopy">
             <span>Hjelp med aktivering via WhatsApp</span>
             <span>🔒 Ingen bindingstid</span>
@@ -572,18 +534,19 @@
 
         <!-- 12 Måneder -->
         <div class="plan-card featured">
-          <span class="plan-badge">Best Verdi</span>
-          <div class="plan-name">12 Måneder</div>
+          <span class="plan-badge">Lavest pris per måned</span>
+          <h3 class="plan-name">12 måneder</h3>
           <p class="plan-desc">Maksimal besparelse for hele husstanden gjennom hele året — uansett hvor i Norge du bor.</p>
-          <div class="plan-price"><span class="amount">799</span><span class="period">kr totalt</span></div>
-          <p class="plan-note"><span class="plan-old-price">1788 kr</span><span class="plan-save">Spar 55%</span> · ca. 66 kr / mnd · 3 enheter</p>
+          <div class="plan-price"><span class="amount">799</span><span class="period">NOK totalt</span></div>
+          <p class="plan-note"><strong>3 enheter</strong> · Engangsbetaling</p>
+          <p class="plan-comparison">66,58 NOK per måned i gjennomsnitt</p>
           <ul class="plan-features">
             <li><span class="check">✓</span> 55 000+ TV-kanaler & VOD</li>
             <li><span class="check">✓</span> 4K UHD + Dolby-lyd</li>
             <li><span class="check">✓</span> Avklar kompatibiliteten for enheten din</li>
             <li><span class="check">✓</span> VIP-kundestøtte på WhatsApp</li>
           </ul>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%2012%20Måneder-pakken%20(Best%20Verdi)%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Kjøp nå</a>
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%2012%20Måneder-pakken%20(Best%20Verdi)%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Velg 12 måneder</a>
           <div class="plan-microcopy">
             <span>Hjelp med aktivering via WhatsApp</span>
             <span>🔒 Ingen bindingstid</span>
@@ -612,41 +575,7 @@
     </div>
   </section>
 
-  <!-- BLOG TEASER -->
-  <section class="section" id="blogg">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="section-eyebrow">Siste nytt & guider</span>
-        <h2>Beste IPTV Norge Blogg</h2>
-        <p class="section-sub">Tips og triks for best mulig IPTV-opplevelse i Norge.</p>
-      </div>
-
-      <div class="blog-grid">
-        <div class="blog-card">
-          <div class="blog-thumb">
-            <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Android TV-boks for IPTV" loading="lazy" width="800" height="450">
-            <span class="tag">Utstyr</span>
-          </div>
-          <span class="blog-date">11. juli 2026</span>
-          <h3>Beste Android TV-boks for IPTV i 2026</h3>
-          <p>Les om Android TV-bokser, hva du bør se etter, og hvordan du setter dem opp.</p>
-          <a href="articles/basta-android-tv-box-iptv.html" class="blog-link">Les guiden om Android TV-bokser →</a>
-        </div>
-        <div class="blog-card">
-          <div class="blog-thumb">
-            <img src="https://images.unsplash.com/photo-1646861039459-fd9e3aabf3fb?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nettverksoppsett for 4K-strømming" loading="lazy" width="800" height="450">
-            <span class="tag">Guide</span>
-          </div>
-          <span class="blog-date">05. juli 2026</span>
-          <h3>Hvordan strømme 4K UHD uten bufring</h3>
-          <p>Les tips om nettverk og appinnstillinger for mer stabil avspilling.</p>
-          <a href="articles/4k-uhd-uten-buffering.html" class="blog-link">Les tips om mindre bufring →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEVICE COMPATIBILITY -->
+  <!-- PRICING TEASER -->
   <section class="section" id="devices">
     <div class="wrap">
       <div class="section-head">
@@ -662,6 +591,7 @@
           </div>
           <h3>Smart TV</h3>
           <p>Samsung, LG, Sony, TCL</p>
+          <p><a href="articles/iptv-samsung-lg-smart-tv.html">Slik setter du opp Samsung og LG Smart-TV</a></p>
         </div>
 
         <div class="device-card">
@@ -694,6 +624,7 @@
           </div>
           <h3>PC &amp; Mac</h3>
           <p>Windows, macOS, Linux</p>
+          <p><a href="articles/iptv-pc-mac.html">Slik setter du opp IPTV på PC og Mac</a></p>
         </div>
 
         <div class="device-card">
@@ -731,7 +662,22 @@
     </div>
   </section>
 
-  <!-- INSTALLATION GUIDES -->
+  <!-- BLOG TEASER -->
+  <section class="section section--flush" id="kontakt">
+    <div class="wrap">
+      <div class="contact-box">
+        <span class="section-eyebrow">Kundeservice via WhatsApp</span>
+        <h2>Klar til å komme i gang?</h2>
+        <p class="section-sub">Kundeserviceteamet vårt hjelper deg med oppsett via WhatsApp.</p>
+        <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20kjøpe%20IPTV%20pakke." class="whatsapp-btn" target="_blank" rel="noopener">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.887 9.884M20.516 3.483C18.245 1.214 15.226 0 12.05 0 5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.86 11.86 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893.001-3.176-1.234-6.156-3.427-8.418"/></svg>
+          Chat med oss på WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVICE COMPATIBILITY -->
   <section class="section" id="guides">
     <div class="wrap">
       <div class="section-head">
@@ -792,7 +738,7 @@
     </div>
   </section>
 
-  <!-- RECOMMENDED IPTV APPS -->
+  <!-- INSTALLATION GUIDES -->
   <section class="section" id="apps">
     <div class="wrap">
       <div class="section-head">
@@ -883,7 +829,95 @@
     </div>
   </section>
 
+  <!-- RECOMMENDED IPTV APPS -->
+  <section class="section" id="dekning">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Dekning i hele Norge</span>
+        <h2>Fra Oslo til Tromsø — samme stabile kvalitet</h2>
+        <p class="section-sub">Uansett hvor i landet du bor, finner du dine lokale favorittkanaler rett ved siden av internasjonal sport og film.</p>
+      </div>
+
+      <div class="country-grid">
+        <div class="country-card">
+          <div class="flag">🇳🇴</div>
+          <h3>Oslo & Østlandet</h3>
+          <div class="country-channels">
+            <span class="channel-chip">NRK1</span>
+            <span class="channel-chip">TV2</span>
+            <span class="channel-chip">Viaplay</span>
+            <span class="channel-chip">TVNorge</span>
+          </div>
+        </div>
+        <div class="country-card">
+          <div class="flag">🇳🇴</div>
+          <h3>Bergen & Vestlandet</h3>
+          <div class="country-channels">
+            <span class="channel-chip">NRK1</span>
+            <span class="channel-chip">TV2</span>
+            <span class="channel-chip">Viaplay</span>
+            <span class="channel-chip">Eurosport</span>
+          </div>
+        </div>
+        <div class="country-card">
+          <div class="flag">🇳🇴</div>
+          <h3>Trondheim & Midt-Norge</h3>
+          <div class="country-channels">
+            <span class="channel-chip">NRK1</span>
+            <span class="channel-chip">TV2</span>
+            <span class="channel-chip">Viaplay</span>
+            <span class="channel-chip">TV3</span>
+          </div>
+        </div>
+        <div class="country-card">
+          <div class="flag">🇳🇴</div>
+          <h3>Tromsø & Nord-Norge</h3>
+          <div class="country-channels">
+            <span class="channel-chip">NRK1</span>
+            <span class="channel-chip">TV2</span>
+            <span class="channel-chip">Viaplay</span>
+            <span class="channel-chip">Eurosport</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ -->
+  <section class="section" id="blogg">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Siste nytt & guider</span>
+        <h2>Beste IPTV Norge Blogg</h2>
+        <p class="section-sub">Tips og triks for best mulig IPTV-opplevelse i Norge.</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Android TV-boks for IPTV" loading="lazy" width="800" height="450">
+            <span class="tag">Utstyr</span>
+          </div>
+          <span class="blog-date">11. juli 2026</span>
+          <h3>Beste Android TV-boks for IPTV i 2026</h3>
+          <p>Les om Android TV-bokser, hva du bør se etter, og hvordan du setter dem opp.</p>
+          <a href="articles/basta-android-tv-box-iptv.html" class="blog-link">Les guiden om Android TV-bokser →</a>
+        </div>
+        <div class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1646861039459-fd9e3aabf3fb?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nettverksoppsett for 4K-strømming" loading="lazy" width="800" height="450">
+            <span class="tag">Guide</span>
+          </div>
+          <span class="blog-date">05. juli 2026</span>
+          <h3>Hvordan strømme 4K UHD uten bufring</h3>
+          <p>Les tips om nettverk og appinnstillinger for mer stabil avspilling.</p>
+          <a href="articles/4k-uhd-uten-buffering.html" class="blog-link">Les tips om mindre bufring →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
   <section class="section" id="faq">
     <div class="wrap">
       <div class="section-head">
@@ -912,21 +946,6 @@
           <summary>Hvor raskt får jeg tilgang etter kjøp? <span class="faq-icon"></span></summary>
           <p class="faq-answer">Kontakt oss via WhatsApp for hjelp med aktivering og oppsett.</p>
         </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT CTA -->
-  <section class="section section--flush" id="kontakt">
-    <div class="wrap">
-      <div class="contact-box">
-        <span class="section-eyebrow">Kundeservice via WhatsApp</span>
-        <h2>Klar til å komme i gang?</h2>
-        <p class="section-sub">Kundeserviceteamet vårt hjelper deg med oppsett via WhatsApp.</p>
-        <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20kjøpe%20IPTV%20pakke." class="whatsapp-btn" target="_blank" rel="noopener">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.887 9.884M20.516 3.483C18.245 1.214 15.226 0 12.05 0 5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.86 11.86 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893.001-3.176-1.234-6.156-3.427-8.418"/></svg>
-          Chat med oss på WhatsApp
-        </a>
       </div>
     </div>
   </section>

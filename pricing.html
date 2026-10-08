@@ -24,6 +24,7 @@
 <meta property="og:url" content="https://beste-iptv-nordic.com/pricing.html">
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/nordic-refresh.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -37,7 +38,7 @@
       "@id": "https://beste-iptv-nordic.com/#organization",
       "name": "Beste IPTV Norge",
       "url": "https://beste-iptv-nordic.com/",
-      "logo": "https://beste-iptv-nordic.com/assets/logo.png",
+      "logo": "https://beste-iptv-nordic.com/assets/logo.svg",
       "areaServed": [
         { "@type": "Country", "name": "Norway" }
       ]
@@ -102,34 +103,35 @@
 }
 </script>
 </head>
-<body>
+<body class="nordic-refresh page-pricing">
+<a class="skip-link" href="#main-content">Hopp til innhold</a>
 
 <header class="nav">
   <div class="wrap">
     <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Beste IPTV Norge" width="343" height="65"></a>
-    <nav class="nav-links" aria-label="Hovedmeny">
+    <nav id="main-menu" class="nav-links" aria-label="Hovedmeny">
       <a href="index.html">Hjem</a>
       <a href="index.html#kanaler">Kanaler</a>
-      <a href="pricing.html" class="active">Priser</a>
+      <a href="pricing.html" class="active" aria-current="page">Priser</a>
       <a href="blog.html">Blogg</a>
       <a href="contact.html">Kontakt</a>
     </nav>
     <div class="nav-right">
       <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20kjøpe%20IPTV%20pakke." class="nav-cta" target="_blank" rel="noopener">Kom i gang</a>
-      <button type="button" class="nav-toggle" aria-label="Åpne meny" aria-expanded="false">
+      <button type="button" class="nav-toggle" aria-label="Åpne meny" aria-expanded="false" aria-controls="main-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main-content">
 
   <section class="page-hero">
     <div class="wrap">
       <span class="section-eyebrow">Priser & pakker for Norge</span>
       <h1>Enkle priser. Ingen bindingstid.</h1>
-      <p>Velg pakken som passer deg — betal én gang, se med det samme. Alle pakker inkluderer 55 000+ TV-kanaler & VOD, med full tilgang til NRK, TV2 og Viaplay.</p>
+      <p>Sammenlign varighet, totalpris og antall enheter. Velg pakken som passer deg, eller be om en 24-timers prøveperiode før du bestemmer deg. Bestilling og hjelp med oppsett skjer via WhatsApp.</p>
     </div>
   </section>
 
@@ -147,81 +149,86 @@
         <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20teste%20IPTV%20gratis%20i%2024%20timer." class="trial-banner-btn" target="_blank" rel="noopener">Prøv gratis i 24 timer →</a>
       </div>
 
+      <p class="pricing-caption">Alle priser er oppgitt i norske kroner (NOK) og gjelder hele perioden.</p>
       <div class="pricing-grid">
         <!-- 1 Måned -->
         <div class="plan-card">
-          <div class="plan-name">1 Måned</div>
+          <h3 class="plan-name">1 måned</h3>
           <p class="plan-desc">Test hele kanalpakken — inkludert NRK, TV2 og Viaplay — risikofritt.</p>
-          <div class="plan-price"><span class="amount">149</span><span class="period">kr totalt</span></div>
-          <p class="plan-note">Engangsbetaling · 1 enhet</p>
+          <div class="plan-price"><span class="amount">149</span><span class="period">NOK totalt</span></div>
+          <p class="plan-note"><strong>1 enhet</strong> · Engangsbetaling</p>
+          <p class="plan-comparison">149 NOK per måned i gjennomsnitt</p>
           <ul class="plan-features">
             <li><span class="check">✓</span> 55 000+ TV-kanaler & VOD</li>
             <li><span class="check">✓</span> FHD-streaming</li>
-            <li><span class="check">✓</span> Fungerer på alle enheter</li>
+            <li><span class="check">✓</span> Avklar kompatibiliteten for enheten din</li>
             <li><span class="check">✓</span> Standard support</li>
           </ul>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%201%20Måned-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Kjøp nå</a>
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%201%20Måned-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Velg 1 måned</a>
           <div class="plan-microcopy">
-            <span>⚡ Lynrask aktivering under 5 min</span>
+            <span>Hjelp med aktivering via WhatsApp</span>
             <span>🔒 Ingen bindingstid</span>
           </div>
         </div>
 
         <!-- 3 Måneder -->
         <div class="plan-card">
-          <div class="plan-name">3 Måneder</div>
+          <h3 class="plan-name">3 måneder</h3>
           <p class="plan-desc">For deg som vil prøve tjenesten en hel sesong til lav pris.</p>
-          <div class="plan-price"><span class="amount">299</span><span class="period">kr totalt</span></div>
-          <p class="plan-note"><span class="plan-old-price">447 kr</span><span class="plan-save">Spar 33%</span> · ca. 100 kr / mnd · 1 enhet</p>
+          <div class="plan-price"><span class="amount">299</span><span class="period">NOK totalt</span></div>
+          <p class="plan-note"><strong>1 enhet</strong> · Engangsbetaling</p>
+          <p class="plan-comparison">99,67 NOK per måned i gjennomsnitt</p>
           <ul class="plan-features">
             <li><span class="check">✓</span> 55 000+ TV-kanaler & VOD</li>
             <li><span class="check">✓</span> 4K / FHD-streaming</li>
-            <li><span class="check">✓</span> Fungerer på alle enheter</li>
+            <li><span class="check">✓</span> Avklar kompatibiliteten for enheten din</li>
             <li><span class="check">✓</span> Standard support</li>
           </ul>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%203%20Måneder-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Kjøp nå</a>
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%203%20Måneder-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Velg 3 måneder</a>
           <div class="plan-microcopy">
-            <span>⚡ Lynrask aktivering under 5 min</span>
+            <span>Hjelp med aktivering via WhatsApp</span>
             <span>🔒 Ingen bindingstid</span>
           </div>
         </div>
 
         <!-- 6 Måneder -->
         <div class="plan-card">
-          <span class="plan-badge">Mest populær</span>
-          <div class="plan-name">6 Måneder</div>
+          <span class="plan-badge">6 måneder</span>
+          <h3 class="plan-name">6 måneder</h3>
           <p class="plan-desc">Best verdi for faste seere som vil ha full tilgang over tid.</p>
-          <div class="plan-price"><span class="amount">449</span><span class="period">kr totalt</span></div>
-          <p class="plan-note"><span class="plan-old-price">894 kr</span><span class="plan-save">Spar 50%</span> · ca. 75 kr / mnd · 2 enheter</p>
+          <div class="plan-price"><span class="amount">449</span><span class="period">NOK totalt</span></div>
+          <p class="plan-note"><strong>2 enheter</strong> · Engangsbetaling</p>
+          <p class="plan-comparison">74,83 NOK per måned i gjennomsnitt</p>
           <ul class="plan-features">
             <li><span class="check">✓</span> 55 000+ TV-kanaler & VOD</li>
             <li><span class="check">✓</span> 4K UHD-streaming</li>
-            <li><span class="check">✓</span> Fungerer på alle enheter</li>
+            <li><span class="check">✓</span> Avklar kompatibiliteten for enheten din</li>
             <li><span class="check">✓</span> Prioritert support</li>
           </ul>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%206%20Måneder-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Kjøp nå</a>
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%206%20Måneder-pakken%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Velg 6 måneder</a>
           <div class="plan-microcopy">
-            <span>⚡ Lynrask aktivering under 5 min</span>
+            <span>Hjelp med aktivering via WhatsApp</span>
             <span>🔒 Ingen bindingstid</span>
           </div>
         </div>
 
         <!-- 12 Måneder -->
         <div class="plan-card featured">
-          <span class="plan-badge">Best Verdi</span>
-          <div class="plan-name">12 Måneder</div>
+          <span class="plan-badge">Lavest pris per måned</span>
+          <h3 class="plan-name">12 måneder</h3>
           <p class="plan-desc">Maksimal besparelse for hele husstanden gjennom hele året — uansett hvor i Norge du bor.</p>
-          <div class="plan-price"><span class="amount">799</span><span class="period">kr totalt</span></div>
-          <p class="plan-note"><span class="plan-old-price">1788 kr</span><span class="plan-save">Spar 55%</span> · ca. 66 kr / mnd · 3 enheter</p>
+          <div class="plan-price"><span class="amount">799</span><span class="period">NOK totalt</span></div>
+          <p class="plan-note"><strong>3 enheter</strong> · Engangsbetaling</p>
+          <p class="plan-comparison">66,58 NOK per måned i gjennomsnitt</p>
           <ul class="plan-features">
             <li><span class="check">✓</span> 55 000+ TV-kanaler & VOD</li>
             <li><span class="check">✓</span> 4K UHD + Dolby-lyd</li>
-            <li><span class="check">✓</span> Fungerer på alle enheter</li>
+            <li><span class="check">✓</span> Avklar kompatibiliteten for enheten din</li>
             <li><span class="check">✓</span> 24/7 VIP-support</li>
           </ul>
-          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%2012%20Måneder-pakken%20(Best%20Verdi)%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Kjøp nå</a>
+          <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20bestille%2012%20Måneder-pakken%20(Best%20Verdi)%20med%20IPTV." class="plan-cta" target="_blank" rel="noopener">Velg 12 måneder</a>
           <div class="plan-microcopy">
-            <span>⚡ Lynrask aktivering under 5 min</span>
+            <span>Hjelp med aktivering via WhatsApp</span>
             <span>🔒 Ingen bindingstid</span>
           </div>
         </div>
@@ -286,7 +293,7 @@
       <div class="contact-box">
         <span class="section-eyebrow">Usikker på hvilken pakke?</span>
         <h2>Snakk med supportteamet vårt</h2>
-        <p class="section-sub">Vi hjelper deg å velge riktig pakke og setter deg opp på under 15 minutter.</p>
+        <p class="section-sub">Vi hjelper deg med å velge pakke og avklare oppsettet for enheten din.</p>
         <a href="https://wa.me/17867352904?text=Hei!%20Jeg%20ønsker%20å%20kjøpe%20IPTV%20pakke." class="whatsapp-btn" target="_blank" rel="noopener">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.887 9.884M20.516 3.483C18.245 1.214 15.226 0 12.05 0 5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.86 11.86 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893.001-3.176-1.234-6.156-3.427-8.418"/></svg>
           Chat med oss på WhatsApp
